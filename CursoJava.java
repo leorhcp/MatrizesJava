@@ -7,6 +7,8 @@ public class CursoJava{
         final int colunas=5;
 
         int[][] matriz=new int[linhas][colunas];
+       //Array definindo e criando a a matriz sem loop
+        int[][] num = {{10,20,30,40,50},{1,2,3,4,5},{100,200,300,400,500}};
         
         for(int l=0; l<linhas;l++){
             for (int c=0; c<colunas;c++){
@@ -26,6 +28,15 @@ public class CursoJava{
         for (int[] m:matriz){
             for(int v:m){
                 System.out.printf("%2d | ", v);
+            }
+            System.out.printf("%n");
+        }
+
+        System.out.println("\nMatriz 03 - Sem loop");
+
+        for(int[] m:num){
+            for(int v:m){
+                System.out.printf("%3d | ",v);
             }
             System.out.printf("%n");
         }
